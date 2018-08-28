@@ -33,8 +33,10 @@ namespace WebApplication1.Controllers
             request.AddHeader("Content-Type", "application/octet-stream");
             request.AddParameter("application/octet-stream", searchRequest.Image, ParameterType.RequestBody);
             _client.AddDefaultHeader("Prediction-Key", System.Configuration.ConfigurationManager.AppSettings["PredictionKey"]);
-
-            var response = _client.Execute<PredictionResult>(request).Data;
+            var res = _client.Execute<PredictionResult>(request);
+            if(res.StatusCode!=HttpStatusCode.OK)
+                return new PredictionResult { Errors = res.Content };
+            var response = res.Data;
             if (response != null && response.Predictions != null)
             {
                 response.Predictions = response.Predictions.Where(p => p.Probability > 0.5).ToList();

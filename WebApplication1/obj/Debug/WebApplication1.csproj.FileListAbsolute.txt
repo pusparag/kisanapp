@@ -197,7 +197,9 @@ D:\Kisan_App\WebApplication1\bin\RestSharp.dll
 D:\Kisan_App\WebApplication1\bin\Swashbuckle.Core.dll
 D:\Kisan_App\WebApplication1\bin\System.IdentityModel.Tokens.Jwt.dll
 D:\Kisan_App\WebApplication1\bin\System.Net.Http.Formatting.dll
+D:\Kisan_App\WebApplication1\bin\System.Web.Cors.dll
 D:\Kisan_App\WebApplication1\bin\System.Web.Helpers.dll
+D:\Kisan_App\WebApplication1\bin\System.Web.Http.Cors.dll
 D:\Kisan_App\WebApplication1\bin\System.Web.Http.dll
 D:\Kisan_App\WebApplication1\bin\System.Web.Http.Owin.dll
 D:\Kisan_App\WebApplication1\bin\System.Web.Http.WebHost.dll
@@ -211,10 +213,11 @@ D:\Kisan_App\WebApplication1\bin\WebActivatorEx.dll
 D:\Kisan_App\WebApplication1\bin\WebGrease.dll
 D:\Kisan_App\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Kisan_App\WebApplication1\bin\System.IdentityModel.Tokens.Jwt.xml
-D:\Kisan_App\WebApplication1\bin\Newtonsoft.Json.xml
 D:\Kisan_App\WebApplication1\bin\System.Net.Http.Formatting.xml
-D:\Kisan_App\WebApplication1\bin\System.Web.Helpers.xml
 D:\Kisan_App\WebApplication1\bin\System.Web.Http.xml
+D:\Kisan_App\WebApplication1\bin\System.Web.Http.Cors.xml
+D:\Kisan_App\WebApplication1\bin\Newtonsoft.Json.xml
+D:\Kisan_App\WebApplication1\bin\System.Web.Helpers.xml
 D:\Kisan_App\WebApplication1\bin\System.Web.Http.WebHost.xml
 D:\Kisan_App\WebApplication1\bin\System.Web.Mvc.xml
 D:\Kisan_App\WebApplication1\bin\System.Web.Optimization.xml
@@ -241,6 +244,3 @@ D:\Kisan_App\WebApplication1\bin\System.Web.Http.Owin.xml
 D:\Kisan_App\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 D:\Kisan_App\WebApplication1\obj\Debug\WebApplication1.dll
 D:\Kisan_App\WebApplication1\obj\Debug\WebApplication1.pdb
-D:\Kisan_App\WebApplication1\bin\System.Web.Cors.dll
-D:\Kisan_App\WebApplication1\bin\System.Web.Http.Cors.dll
-D:\Kisan_App\WebApplication1\bin\System.Web.Http.Cors.xml

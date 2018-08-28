@@ -1,5 +1,6 @@
 ﻿using RestSharp;
 using System.Linq;
+using System.Net;
 using System.Web.Http;
 using System.Web.WebPages;
 using WebApplication1.Models;
@@ -25,8 +26,10 @@ namespace WebApplication1.Controllers
             request.RequestFormat = DataFormat.Json;
             request.AddBody(model);
             _client.AddDefaultHeader("Prediction-Key", System.Configuration.ConfigurationManager.AppSettings["PredictionKey"]);
-
-            var response = _client.Execute<PredictionResult>(request).Data;
+            var res = _client.Execute<PredictionResult>(request);
+            if (res.StatusCode != HttpStatusCode.OK)
+                return new PredictionResult { Errors = res.Content };
+            var response = res.Data;
             if (response!=null && response.Predictions != null)
             {
                 response.Predictions = response.Predictions.Where(p => p.Probability > 0.5).ToList();
