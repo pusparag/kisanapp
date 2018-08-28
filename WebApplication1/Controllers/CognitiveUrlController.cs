@@ -23,7 +23,7 @@ namespace WebApplication1.Controllers
             _client.AddDefaultHeader("Prediction-Key", System.Configuration.ConfigurationManager.AppSettings["PredictionKey"]);
 
             var response = _client.Execute<PredictionResult>(request).Data;
-            if (response.Predictions != null)
+            if (response!=null && response.Predictions != null)
             {
                 response.Predictions = response.Predictions.Where(p => p.Probability > 0.5).ToList();
                 Utility.LogReport(response, searchRequest.Location);
