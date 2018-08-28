@@ -164,3 +164,6 @@ D:\Kisan_App\WebApplication1\bin\System.Web.Http.Owin.xml
 D:\Kisan_App\WebApplication1\obj\Release\WebApplication1.csprojResolveAssemblyReference.cache
 D:\Kisan_App\WebApplication1\obj\Release\WebApplication1.dll
 D:\Kisan_App\WebApplication1\obj\Release\WebApplication1.pdb
+D:\Kisan_App\WebApplication1\bin\System.Web.Cors.dll
+D:\Kisan_App\WebApplication1\bin\System.Web.Http.Cors.dll
+D:\Kisan_App\WebApplication1\bin\System.Web.Http.Cors.xml

@@ -15,17 +15,22 @@ namespace WebApplication1.Controllers
         
     public class CognitiveImageController : ApiController
     {
-       
+
         public PredictionResult Post([FromBody]CognitiveImageRequest searchRequest)
         {
             //searchRequest.Image = GetImageAsByteArray(@"D:\Kisan\b.jpg");
-            
+            if(searchRequest==null)
+                return new PredictionResult { Errors = "Empty Search Request."};
+
+            if (searchRequest.Image == null || searchRequest.Image.Length == 0)
+                return new PredictionResult { Errors = "Empty Image data."};
+
             string url = System.Configuration.ConfigurationManager.AppSettings["PredictionUrlForImage"];
-            var _client = new RestClient(url);            
+            var _client = new RestClient(url);
             _client.AddHandler("application/octet-stream", new RestSharp.Deserializers.JsonDeserializer());
 
             var request = new RestRequest(Method.POST);
-            request.AddHeader("Content-Type", "application/octet-stream");            
+            request.AddHeader("Content-Type", "application/octet-stream");
             request.AddParameter("application/octet-stream", searchRequest.Image, ParameterType.RequestBody);
             _client.AddDefaultHeader("Prediction-Key", System.Configuration.ConfigurationManager.AppSettings["PredictionKey"]);
 

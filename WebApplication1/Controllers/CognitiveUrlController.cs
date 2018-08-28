@@ -1,6 +1,7 @@
 ﻿using RestSharp;
 using System.Linq;
 using System.Web.Http;
+using System.Web.WebPages;
 using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
@@ -13,8 +14,11 @@ namespace WebApplication1.Controllers
         {
             string url = System.Configuration.ConfigurationManager.AppSettings["PredictionUrlForWebPath"];
             _client = new RestClient(url);
+            if (searchRequest == null)
+                return new PredictionResult { Errors = "Empty Search Request." };
+            if (searchRequest.ImageUrl.IsEmpty())
+                return new PredictionResult { Errors = "Requested Url to be analysed is empty" };
 
-            PredictionResult result;
             var model = new CustomVisionRequest { url = searchRequest.ImageUrl };
 
             var request = new RestRequest(Method.POST);

@@ -14,6 +14,7 @@ namespace WebApplication1.Models
         public Guid Iteration { get; set; }
         public DateTime Created { get; set; }
         public List<Prediction> Predictions { get; set; }
+        public string Errors { get; set; }
     }
     public class Prediction
     {
