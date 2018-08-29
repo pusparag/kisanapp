@@ -13,7 +13,7 @@ namespace WebApplication1.Models
 
     public class CognitiveImageRequest
     {
-        public byte[] Image { get; set; }
+        public string Image { get; set; }
         public LocationDetail Location { get; set; }
     }
 }
