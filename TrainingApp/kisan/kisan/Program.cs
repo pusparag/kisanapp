@@ -39,12 +39,13 @@ namespace kisan
 
                 var imagefiles = Directory.GetFiles(Path.Combine(sourceDirectory, directory)).ToList();
                 var imagePerTag = 190;
-                var randomFiles = GetRandomFiles(imagefiles, imagePerTag);
+                
                 var tagName = string.Format("{0} {1}", plantName, diseaseTag);
                 if (trainingApi.GetTags(project.Id).Any(t => t.Name == tagName))
                     continue;
                 var tag = trainingApi.CreateTag(project.Id, tagName);
-                
+
+                var randomFiles = GetRandomFiles(imagefiles, imagePerTag);
                 //max upload size 64 in a batch
                 var batchStartIndex = 0;
                 var batchsize = 64;
