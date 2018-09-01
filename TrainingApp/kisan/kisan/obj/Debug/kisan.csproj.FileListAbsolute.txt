@@ -1,0 +1,12 @@
+D:\Kisan_App\TrainingApp\kisan\kisan\bin\Debug\kisan.exe.config
+D:\Kisan_App\TrainingApp\kisan\kisan\bin\Debug\kisan.exe
+D:\Kisan_App\TrainingApp\kisan\kisan\bin\Debug\kisan.pdb
+D:\Kisan_App\TrainingApp\kisan\kisan\obj\Debug\kisan.csprojResolveAssemblyReference.cache
+D:\Kisan_App\TrainingApp\kisan\kisan\obj\Debug\kisan.exe
+D:\Kisan_App\TrainingApp\kisan\kisan\obj\Debug\kisan.pdb
+D:\Kisan_App\TrainingApp\kisan\kisan\bin\Debug\Microsoft.Azure.CognitiveServices.Vision.CustomVision.Training.dll
+D:\Kisan_App\TrainingApp\kisan\kisan\bin\Debug\Microsoft.Rest.ClientRuntime.Azure.dll
+D:\Kisan_App\TrainingApp\kisan\kisan\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+D:\Kisan_App\TrainingApp\kisan\kisan\bin\Debug\Newtonsoft.Json.dll
+D:\Kisan_App\TrainingApp\kisan\kisan\bin\Debug\System.Runtime.dll
+D:\Kisan_App\TrainingApp\kisan\kisan\bin\Debug\Newtonsoft.Json.xml
